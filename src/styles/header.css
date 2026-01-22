@@ -1,0 +1,68 @@
+.wrapper
+{
+	display: grid;
+	grid-template-columns: 1fr 4fr;
+	grid-auto-rows: auto;
+	padding: 1rem;
+}
+
+
+button
+{
+	display: inline;
+	background-color: white;
+	color: black;
+	border: none;
+}
+
+.burger
+{
+	display: none;
+}
+
+.web-view
+{
+	display: grid;
+	grid-auto-columns: max-content;
+	grid-auto-flow: column;
+	justify-content: end;
+	gap: 2rem;
+}
+
+.menu
+{
+	padding: 0 1.5em;
+}
+
+@media screen and (max-width: 998px)
+{
+	.web-view
+	{
+		display: none;
+	}
+
+	.mobile-view
+	{
+		position: absolute;
+		right: 0;
+		top: 50px;
+		display: grid;
+		background-color: white;
+	}
+
+	.mobile-view *
+	{
+		padding: 1em 0;
+	}
+
+	.mobile-view span:last-of-type
+	{
+		border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+	}
+
+	.burger
+	{
+		display: flex;
+		justify-content: end;
+	}
+}
