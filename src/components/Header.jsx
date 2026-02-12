@@ -2,8 +2,8 @@ import { useState } from "react";
 import "../styles/header.css"
 import {GiHamburgerMenu} from "react-icons/gi";
 
-function Header() {
-
+function Header()
+{
 	const [isActive, setIsActive] = useState(false);
 
 	const handleClick = () => {
