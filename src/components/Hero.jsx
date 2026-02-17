@@ -1,9 +1,9 @@
-import MainImage from "./MainImage";
 import {Parallax, ParallaxLayer} from "@react-spring/parallax";
-// import {useSpring, animated} from "@react-spring/web";
 import {useScroll, useTransform, motion} from "motion/react";
 import {useRef, useEffect, useState} from "react";
 
+import MainImage from "./MainImage";
+import TestBox from "./testbox";
 import "../styles/hero.css";
 
 function Hero()
@@ -18,55 +18,47 @@ function Hero()
 	}, []);
 
 	const {scrollYProgress} = useScroll({ container });
-	const opacity = useTransform(scrollYProgress, [0.3, 0.6], [0.5, 1]);
-	const scale = useTransform(scrollYProgress, [0.3, 0.6], [0.8, 1]);
+	const opacity = useTransform(scrollYProgress, [0.5, 0.6], [0.5, 1]);
+	const scale = useTransform(scrollYProgress, [0.5, 0.6], [0.8, 1]);
 
 	return (
 		<div className="main-hero">
-			<Parallax ref={parallaxRef} pages={4}>
-				<ParallaxLayer
-					sticky={{start: 0, end: 3}}
-					offset={0}
-					speed={1}
-					// factor={1}
-				>
+			<Parallax className="parallax-container" ref={parallaxRef} pages={2}>
+				<ParallaxLayer sticky={{start: 0, end: 1}}>
 					<MainImage />
 				</ParallaxLayer>
 
-				<ParallaxLayer
-					offset={1}
-					speed={1}
-					// factor={1}
-				>
-					<motion.div style={{opacity, scale}}>
-						<h1>
-						Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis	convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-						</h1>
-					</motion.div>
+				<ParallaxLayer offset={1} speed={1}>
+					<div className="hero-card-container container-pos1">
+						<motion.div
+							className="hero-card"
+							style={{opacity, scale}}
+						>
+							<TestBox />
+						</motion.div>
+					</div>
 				</ParallaxLayer>
 
-				<ParallaxLayer
-					offset={2}
-					speed={2}
-					// factor={1}
-				>
-					<motion.div style={{opacity, scale}}>
-						<h1>
-							Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis	convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-						</h1>
-					</motion.div>
+				<ParallaxLayer offset={1.2} speed={3}>
+					<div className="hero-card-container container-pos2">
+						<motion.div
+							className="hero-card"
+							style={{opacity, scale}}
+						>
+							<TestBox />
+						</motion.div>
+					</div>
 				</ParallaxLayer>
 
-				<ParallaxLayer
-					offset={3}
-					speed={3}
-					// factor={1}
-				>
-					<motion.div style={{opacity, scale}}>
-						<h1>
-						Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis	convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-						</h1>
-					</motion.div>
+				<ParallaxLayer offset={1.4} speed={2}>
+					<div className="hero-card-container container-pos3">
+						<motion.div
+							className="hero-card"
+							style={{opacity, scale}}
+						>
+							<TestBox />
+						</motion.div>
+					</div>
 				</ParallaxLayer>
 			</Parallax>
 		</div>
