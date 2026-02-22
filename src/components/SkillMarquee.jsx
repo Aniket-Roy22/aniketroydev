@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 
-import "../styles/marqueeTest.css";
+import "../styles/marquee.css";
 
 const imgArray = [
 	"./assets/java-logo.png",
