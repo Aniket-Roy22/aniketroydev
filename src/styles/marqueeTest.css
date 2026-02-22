@@ -1,0 +1,23 @@
+.marquee-container
+{
+	overflow: hidden;
+	width: 100%;
+}
+
+.group
+{
+	display: flex;
+	width: max-content;
+}
+
+.slide
+{
+	padding-right: 2em;
+}
+
+img
+{
+	width: 100px;
+	aspect-ratio: 1/1;
+	object-fit: contain;
+}
