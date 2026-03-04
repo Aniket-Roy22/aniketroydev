@@ -3,14 +3,14 @@ import { motion } from "motion/react";
 import "../styles/marquee.css";
 
 const imgArray = [
-	"./assets/java-logo.png",
-	"./assets/c-logo.png",
-	"./assets/js-logo.png",
-	"./assets/postgresql-logo.png",
-	"./assets/bootstrap-logo.png",
-	"./assets/node-logo.png",
-	"./assets/rest-logo.png",
-	"./assets/react-logo.png"
+	"./images/java-logo.png",
+	"./images/c-logo.png",
+	"./images/js-logo.png",
+	"./images/postgresql-logo.png",
+	"./images/bootstrap-logo.png",
+	"./images/node-logo.png",
+	"./images/rest-logo.png",
+	"./images/react-logo.png"
 ];
 
 function SkillMarquee()
@@ -23,7 +23,7 @@ function SkillMarquee()
 				transition={{
 					repeat: Infinity,
 					repeatType: "loop",
-					duration: 10,
+					duration: 20,
 					ease: "linear",
 				}}
 			>
