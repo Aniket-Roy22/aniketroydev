@@ -8,9 +8,6 @@ function TestBox() {
 		<Card sx={{maxWidth: 345}}>
 			<CardActionArea>
 				<CardContent>
-					{/* <Typography gutterBottom variant="h5" component="div">
-						Lizard
-					</Typography> */}
 					<Typography variant="body1" sx={{color: "text.secondary"}}>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 						Maecenas tempus dolor et mattis commodo. Vestibulum ut

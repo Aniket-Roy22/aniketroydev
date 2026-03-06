@@ -2,7 +2,7 @@ import Header from "./components/Header";
 import Hero  from "./components/Hero";
 import BentoBox from "./components/BentoBox";
 import ProjectCarousel from "./components/ProjectCarousel";
-import ProjectPopover from "./components/ProjectPopover";
+import ProjectModal from "./components/ProjectModal";
 
 import "./App.css";
 
@@ -14,7 +14,7 @@ function App()
 			<Hero />
 			<BentoBox />
 			<ProjectCarousel />
-			<ProjectPopover />
+			<ProjectModal />
 		</>
 	);
 }
