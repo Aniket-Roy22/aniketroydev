@@ -23,7 +23,7 @@ const variants = {
 	}),
 };
 
-const swipeConfidenceThreshold = 3000;
+const swipeConfidenceThreshold = 200;
 const swipePower = (offset, velocity) => Math.abs(offset) * velocity;
 
 export default function Carousel() {
@@ -37,12 +37,11 @@ export default function Carousel() {
 	};
 
 	return (
-		<div className="carousel">
+		<div className="carousel" ref={containerRef}>
 			<AnimatePresence initial={false} custom={direction}>
 				<motion.img
 					key={page}
 					src={images[imageIndex]}
-					ref={containerRef}
 					custom={direction}
 					variants={variants}
 					initial="enter"
@@ -72,12 +71,10 @@ export default function Carousel() {
 			>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
-					width="32"
-					height="32"
 					fill="#000000"
 					viewBox="0 0 256 256"
 				>
-					<path d="M165.66,202.34a8,8,0,0,1-11.32,11.32l-80-80a8,8,0,0,1,0-11.32l80-80a8,8,0,0,1,11.32,11.32L91.31,128Z"></path>
+					<path d="M160 48 L96 128 L160 208" />
 				</svg>
 			</button>
 
@@ -87,12 +84,10 @@ export default function Carousel() {
 			>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
-					width="32"
-					height="32"
 					fill="#000000"
 					viewBox="0 0 256 256"
 				>
-					<path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path>
+					<path d="M96 48 L176 128 L96 208" />
 				</svg>
 			</button>
 

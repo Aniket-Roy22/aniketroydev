@@ -1,4 +1,5 @@
-.carousel {
+.carousel
+{
 	position: relative;
 	width: 800px;
 	height: 500px;
@@ -8,22 +9,22 @@
 	user-select: none;
 	-webkit-user-drag: none;
 	background: #111; /* fallback while image loads */
-  }
+}
   
-  .carousel-image {
+.carousel-image
+{
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	top: 0;
-	left: 0;
+	inset: 0;
 	border-radius: 12px;
-	will-change: transform, opacity;
-	pointer-events: none; /* allow drag to capture on the motion element */
-  }
+	/* will-change: transform, opacity; */
+}
   
   /* Buttons */
-  .carousel-button {
+.carousel-button
+{
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
@@ -38,18 +39,35 @@
 	justify-content: center;
 	z-index: 5;
 	user-select: none;
-  }
+}
+
+.carousel-button svg
+{
+	width: 32px;
+	aspect-ratio: 1/1;
+}
+
+.carousel-button svg path
+{
+	stroke: black;
+	stroke-width: 32px;
+	stroke-linecap: round;
+	stroke-linejoin: bevel;
+}
   
-  .carousel-button.left {
+.carousel-button.left
+{
 	left: 12px;
-  }
+}
   
-  .carousel-button.right {
+.carousel-button.right
+{
 	right: 12px;
-  }
+}
   
-  /* Dots */
-  .carousel-dots {
+/* Dots */
+.carousel-dots
+{
 	position: absolute;
 	bottom: 14px;
 	left: 50%;
@@ -57,30 +75,34 @@
 	display: flex;
 	gap: 8px;
 	z-index: 5;
-  }
+}
   
-  .carousel-dot {
-	width: 10px;
-	height: 10px;
+.carousel-dot
+{
+	width: 0.5em;
+	aspect-ratio: 1/1;
 	border-radius: 50%;
 	background: rgba(255, 255, 255, 0.45);
 	border: none;
 	padding: 0;
 	cursor: pointer;
-  }
+}
   
-  .carousel-dot.active {
+.carousel-dot.active
+{
 	background: rgba(255, 255, 255, 1);
 	transform: scale(1.2);
 	opacity: 1;
-  }
+}
   
-  /* Responsive */
-  @media (max-width: 900px) {
-	.carousel {
-	  width: 100%;
-	  height: 56vw; /* maintain rough aspect */
-	  max-height: 500px;
-	  border-radius: 10px;
+/* Responsive */
+@media (max-width: 900px)
+{
+	.carousel 
+	{
+		width: 100%;
+		height: 56vw; /* maintain rough aspect */
+		max-height: 500px;
+		border-radius: 10px;
 	}
-  }
+}
