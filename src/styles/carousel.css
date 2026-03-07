@@ -8,10 +8,10 @@
 	border-radius: 12px;
 	user-select: none;
 	-webkit-user-drag: none;
-	background: #111; /* fallback while image loads */
+	background: #111; /* fallback while slide loads */
 }
   
-.carousel-image
+.carousel-slide
 {
 	position: absolute;
 	width: 100%;

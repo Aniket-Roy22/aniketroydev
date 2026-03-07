@@ -13,8 +13,11 @@ function App()
 			<Header />
 			<Hero />
 			<BentoBox />
-			<ProjectCarousel />
-			<ProjectModal />
+			<ProjectCarousel>
+				<ProjectModal />
+				<ProjectModal />
+				<ProjectModal />
+			</ProjectCarousel>
 		</>
 	);
 }

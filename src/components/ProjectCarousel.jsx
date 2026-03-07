@@ -1,12 +1,6 @@
-import {useState, useRef} from "react";
+import {useState, useRef, Children} from "react";
 import {motion, AnimatePresence} from "framer-motion";
 import "../styles/carousel.css";
-
-const images = [
-	"https://picsum.photos/id/1015/800/500",
-	"https://picsum.photos/id/1016/800/500",
-	"https://picsum.photos/id/1018/800/500",
-];
 
 const variants = {
 	enter: (direction) => ({
@@ -26,11 +20,12 @@ const variants = {
 const swipeConfidenceThreshold = 200;
 const swipePower = (offset, velocity) => Math.abs(offset) * velocity;
 
-export default function Carousel() {
+export default function Carousel({children}) {
 	const [[page, direction], setPage] = useState([0, 0]);
 	const containerRef = useRef(null);
+	const slides = Children.toArray(children);
+	const index = ((page % slides.length) + slides.length) % slides.length;
 
-	const imageIndex = ((page % images.length) + images.length) % images.length;
 
 	const paginate = (newDirection) => {
 		setPage([page + newDirection, newDirection]);
@@ -39,9 +34,8 @@ export default function Carousel() {
 	return (
 		<div className="carousel" ref={containerRef}>
 			<AnimatePresence initial={false} custom={direction}>
-				<motion.img
+				<motion.div
 					key={page}
-					src={images[imageIndex]}
 					custom={direction}
 					variants={variants}
 					initial="enter"
@@ -60,9 +54,10 @@ export default function Carousel() {
 							paginate(-1);
 						}
 					}}
-					className="carousel-image"
-					alt={`Slide ${imageIndex + 1}`}
-				/>
+					className="carousel-slide"
+				>
+					{slides[index]}
+				</motion.div>
 			</AnimatePresence>
 
 			<button
@@ -92,11 +87,11 @@ export default function Carousel() {
 			</button>
 
 			<div className="carousel-dots">
-				{images.map((_, i) => (
+				{slides.map((_, i) => (
 					<button
 						key={i}
-						className={`carousel-dot ${i === imageIndex ? "active" : ""}`}
-						onClick={() => setPage([i, i > imageIndex ? 1 : -1])}
+						className={`carousel-dot ${i === index ? "active" : ""}`}
+						onClick={() => setPage([i, i > index ? 1 : -1])}
 						aria-label={`Go to slide ${i + 1}`}
 					/>
 				))}
