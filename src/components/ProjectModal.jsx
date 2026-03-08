@@ -1,6 +1,5 @@
 import {useState} from "react";
 import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import TestBox from "./testbox";
@@ -13,14 +12,28 @@ export default function BasicModal() {
 	const handleClose = () => setOpen(false);
 
 	return (
-		<div>
-			<Button
-				variant="contained"
-				color="secondary"
+		<div className="project-slide">
+			<div
+				className="project-display"
 				onClick={handleOpen}
 			>
-				Open modal
-			</Button>
+				<h1 className="display-title">Project Title</h1>
+				<img
+					className="display-pic"
+					src="./images/test.jpg"
+					alt="project picture"
+				/>
+				<span className="display-desc">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nobis soluta nisi fugit! Recusandae commodi porro perferendis facilis voluptatem iure vero autem, doloribus odit nobis? Mollitia atque aut esse ipsam.
+				</span>
+				<a
+					className="display-link"
+					onClick={(e) => e.stopPropagation()}
+					href="https://www.instagram.com"
+				>
+					<button>Click Me!</button>
+				</a>
+			</div>
 
 			<Modal
 				open={open}
