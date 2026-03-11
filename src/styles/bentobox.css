@@ -16,3 +16,14 @@
 {
 	background-color: chartreuse;
 }
+
+.music
+{
+	position: relative;
+}
+
+.spotify-widget
+{
+	width: 100%;
+	height: 100%;
+}
