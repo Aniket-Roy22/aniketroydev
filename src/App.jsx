@@ -4,6 +4,7 @@ import BentoBox from "./components/BentoBox";
 import ProjectCarousel from "./components/ProjectCarousel";
 import ProjectModal from "./components/ProjectModal";
 import ContactForm from "./components/ContactForm";
+import Footer from "./components/Footer";
 
 import "./App.css";
 
@@ -20,6 +21,7 @@ function App()
 				<ProjectModal />
 			</ProjectCarousel>
 			<ContactForm />
+			<Footer />
 		</>
 	);
 }
