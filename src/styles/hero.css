@@ -2,8 +2,7 @@
 {
 	position: relative;
 	height: 100vh;
-	/* overflow-y: auto; */
-	/* background-color: black; */
+	margin: 6rem 2rem 3rem;
 }
 
 .parallax-container
@@ -15,6 +14,7 @@
 {
 	width: 40%;
 	aspect-ratio: 1/1.2;
+	margin-left: rem;
 }
 
 .main-img-bg
@@ -23,6 +23,9 @@
 	background-position: bottom;
 	background-size: contain;
 	background-repeat: no-repeat;
+
+	-webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
 }
 
 .hero-card-container
@@ -31,15 +34,122 @@
 	justify-content: flex-end;
 }
 
-.container-pos1
+.container-pos1 { padding-right: 10rem; }
+.container-pos2 { padding-right: 35rem; }
+.container-pos3 { padding-right: 15rem; }
+
+/* --- Large desktops (1536px+) --- */
+@media (min-width: 1536px)
 {
-	padding-right: 10rem;
+	.main-img-pos   
+	{
+		width: 35%;
+	}
+    .container-pos1 
+	{
+		padding-right: 12rem;
+	}
+    .container-pos2 
+	{
+		padding-right: 40rem;
+	}
+    .container-pos3 
+	{
+		padding-right: 18rem;
+	}
 }
-.container-pos2
-{
-	padding-right: 35rem;
+
+/* --- Desktops (1200px - 1535px) --- */
+@media (max-width: 1535px) {
+    .main-img-pos   
+	{
+		width: 38%;
+	}
+    .container-pos1 
+	{
+		padding-right: 10rem;
+	}
+    .container-pos2 
+	{
+		padding-right: 35rem;
+	}
+    .container-pos3 
+	{
+		padding-right: 15rem;
+	}
 }
-.container-pos3
-{
-	padding-right: 15rem;
+
+/* --- Laptops (900px - 1199px) --- */
+@media (max-width: 1199px) {
+    .main-img-pos   
+	{
+		width: 50%;
+	}
+    .container-pos1 
+	{
+		padding-right: 6rem;
+	}
+    .container-pos2 
+	{
+		padding-right: 20rem;
+	}
+    .container-pos3 
+	{
+		padding-right: 10rem;
+	}
+}
+
+/* --- Tablets (768px - 899px) --- */
+@media (max-width: 899px) {
+    .main-img-pos   
+	{
+		width: 65%;
+	}
+    .container-pos1 
+	{
+		padding-right: 3rem;
+	}
+    .container-pos2 
+	{
+		padding-right: 10rem;
+	}
+    .container-pos3 
+	{
+		padding-right: 5rem
+	}
+}
+
+/* --- Mobile (max 768px) --- */
+@media (max-width: 768px) {
+    .main-img-pos   
+	{
+		width: 85%;
+	}
+
+    .hero-card-container
+	{
+        justify-content: center;
+        padding-right: 0;
+    }
+
+    .container-pos1,
+    .container-pos2,
+    .container-pos3
+	{
+		padding-right: 0;
+	}
+}
+
+/* --- Small mobile (max 480px) --- */
+@media (max-width: 480px) {
+    .main-img-pos
+	{
+		width: 100%;
+	}
+
+    .hero-card-container
+	{
+        justify-content: center;
+        padding-right: 0;
+    }
 }
