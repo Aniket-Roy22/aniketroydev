@@ -1,4 +1,6 @@
 .footer
 {
 	text-align: center;
+	background-color: chartreuse;
+	padding: 1rem 1rem 1px;
 }
