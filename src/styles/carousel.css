@@ -1,3 +1,9 @@
+.carousel-container
+{
+	background-color: chartreuse;
+	padding: 6rem 0;
+}
+
 .carousel
 {
 	position: relative;
@@ -8,7 +14,6 @@
 	border-radius: 12px;
 	user-select: none;
 	-webkit-user-drag: none;
-	background: #111; /* fallback while slide loads */
 }
   
 .carousel-slide
@@ -22,7 +27,7 @@
 	/* will-change: transform, opacity; */
 }
   
-  /* Buttons */
+/* Buttons */
 .carousel-button
 {
 	position: absolute;
@@ -49,7 +54,7 @@
 
 .carousel-button svg path
 {
-	stroke: black;
+	stroke: rgb(255, 0, 0);
 	stroke-width: 32px;
 	stroke-linecap: round;
 	stroke-linejoin: bevel;
@@ -98,11 +103,25 @@
 /* Responsive */
 @media (max-width: 900px)
 {
-	.carousel 
+    .carousel-container
 	{
-		width: 100%;
-		height: 56vw; /* maintain rough aspect */
-		max-height: 500px;
-		border-radius: 10px;
-	}
+        padding: 4rem 2rem;
+    }
+
+    .carousel
+	{
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        height: auto;
+        max-height: 500px;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 480px)
+{
+    .carousel-container
+	{
+        padding: 3rem 1rem;
+    }
 }
