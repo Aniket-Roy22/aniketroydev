@@ -6,8 +6,8 @@ import "../styles/bentobox.css"
 
 function BentoBox() {
 	return (
-		<div className="container">
-			<div style={{gridArea: "box1"}}>
+		<div className="bento-container">
+			<div className="skill-area" style={{gridArea: "box1"}}>
 				<SkillMarquee />
 			</div>
 
@@ -44,7 +44,7 @@ function BentoBox() {
 					className="spotify-widget"
 					data-testid="embed-iframe"
 					src="https://open.spotify.com/embed/show/1Y9gTi9bBYEJya1Z8Wo2ME?utm_source=generator"
-					allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+					allow="autoplay; clipboard-write; encrypted-media; picture-in-picture"
 					loading="lazy"
 				></iframe>
 			</div>
