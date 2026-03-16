@@ -2,85 +2,80 @@ import {useState} from "react";
 import {GiHamburgerMenu} from "react-icons/gi";
 import {Box, Button, Menu, MenuItem} from "@mui/material";
 
+import "../styles/header.css";
+
+const NAV_LINKS = [
+	{label: "About", href: "#about"},
+	{label: "Projects", href: "#projects"},
+	{label: "Contact Me", href: "#contact"},
+];
+
 function Header() {
 	const [anchorEl, setAnchorEl] = useState(null);
-
-	const handleOpen = (event) => {
-		setAnchorEl(event.currentTarget);
-	};
-
-	const handleClose = () => {
-		setAnchorEl(null);
-	};
-
 	const open = Boolean(anchorEl);
+
+	const handleOpen = (event) => setAnchorEl(event.currentTarget);
+	const handleClose = () => setAnchorEl(null);
 
 	return (
 		<Box
+			component="header"
 			sx={{
 				width: "65vw",
 				position: "fixed",
-				left: "0",
-				right: "0",
+				inset: "0",
+				bottom: "auto",
 				display: "flex",
+				alignItems: "center",
 				padding: "1rem 2rem",
 				margin: "2rem auto",
 				backgroundColor: "grey",
 				borderRadius: "999px",
-				zIndex: "999",
+				zIndex: 999,
 			}}
 		>
-			<Box
-				sx={{
-					textAlign: "center",
-				}}
-			>
-				Icon
-			</Box>
+			{/* Logo / Icon area */}
+			<Box>Icon</Box>
 
+			{/* Desktop navigation */}
 			<Box
 				sx={{
 					ml: "auto",
-					display: "flex",
+					display: {xs: "none", md: "flex"},
 					alignItems: "center",
 					gap: 3,
 				}}
 			>
-				<Box
-					sx={{
-						display: {xs: "none", md: "flex"},
-						gap: 3,
-						alignItems: "center",
-					}}
-				>
-					<a href="" className="navigation-link">
-						About
+				{NAV_LINKS.map(({label, href}) => (
+					<a key={label} href={href} className="navigation-link">
+						{label}
 					</a>
-					<a href="" className="navigation-link">
-						Projects
-					</a>
-					<a href="" className="navigation-link">
-						Contact Me
-					</a>
-					<Button variant="contained">Download CV</Button>
-				</Box>
-
-				<Button
-					onClick={handleOpen}
-					sx={{
-						display: {xs: "flex", md: "none"},
-						minWidth: "auto",
-						fontSize: "20px",
-					}}
-				>
-					<GiHamburgerMenu />
-				</Button>
+				))}
+				<Button className="download-button" variant="contained">Download CV</Button>
 			</Box>
 
+			{/* Mobile hamburger button */}
+			<Button
+				onClick={handleOpen}
+				sx={{
+					ml: "auto",
+					display: {xs: "flex", md: "none"},
+					minWidth: "auto",
+					fontSize: "20px",
+				}}
+				aria-label="Open navigation menu"
+				className="burger"
+			>
+				<GiHamburgerMenu />
+			</Button>
+
+			{/* Mobile dropdown menu */}
 			<Menu anchorEl={anchorEl} open={open} onClose={handleClose}>
-				<MenuItem onClick={handleClose}>About</MenuItem>
-				<MenuItem onClick={handleClose}>Projects</MenuItem>
-				<MenuItem onClick={handleClose}>Contact Me</MenuItem>
+				{NAV_LINKS.map(({label}) => (
+					<MenuItem key={label} onClick={handleClose}>
+						{label}
+					</MenuItem>
+				))}
 				<MenuItem onClick={handleClose}>Download CV</MenuItem>
 			</Menu>
 		</Box>
