@@ -6,7 +6,7 @@ import "../styles/bentobox.css"
 
 function BentoBox() {
 	return (
-		<div className="bento-container">
+		<div id="about" className="bento-container">
 			<div className="skill-area" style={{gridArea: "box1"}}>
 				<SkillMarquee />
 			</div>
@@ -46,7 +46,7 @@ function BentoBox() {
 					src="https://open.spotify.com/embed/show/1Y9gTi9bBYEJya1Z8Wo2ME?utm_source=generator"
 					allow="autoplay; clipboard-write; encrypted-media; picture-in-picture"
 					loading="lazy"
-				></iframe>
+				/>
 			</div>
 
 			<div style={{gridArea: "box5"}}>
@@ -54,9 +54,7 @@ function BentoBox() {
 				Perferendis optio, voluptates repudiandae minus quaerat
 				temporibus recusandae repellendus, eos ipsam accusamus sint
 				dolores pariatur possimus ducimus neque tempore qui facere natus
-				debitis iste, consequatur corporis! Rerum minus minima
-				voluptatem corporis recusandae, odit suscipit ipsam fugiat quo
-				quasi iusto, maiores facilis soluta.
+				debitis iste, consequatur corporis!
 			</div>
 		</div>
 	);

@@ -3,8 +3,8 @@ import "../styles/socials.css";
 function SocialIcon({link, svgPath, size})
 {
 	return (
-		<div className="social-link">
-			<a href={link}>
+		<a href={link}>
+			<div className="social-link">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					width={`${size}rem`}
@@ -14,8 +14,8 @@ function SocialIcon({link, svgPath, size})
 				>
 					<path d={svgPath}></path>
 				</svg>
-			</a>
-		</div>
+			</div>
+		</a>
 	);
 }
 

@@ -32,7 +32,7 @@ export default function Carousel({children}) {
 	};
 
 	return (
-		<div className="carousel-container">
+		<div id="projects" className="carousel-container">
 			<div className="carousel" ref={containerRef}>
 				<AnimatePresence initial={false} custom={direction}>
 					<motion.div

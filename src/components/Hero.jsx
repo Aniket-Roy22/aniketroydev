@@ -40,7 +40,7 @@ function Hero() {
 	const scale = useTransform(scrollYProgress, [0.5, 0.6], [0.8, 1]);
 
 	return (
-		<div className="main-hero">
+		<div id="home" className="main-hero">
 			<Parallax
 				className="parallax-container"
 				ref={parallaxRef}
