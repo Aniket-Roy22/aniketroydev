@@ -1,8 +1,7 @@
-:root {
-	font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-	line-height: 1.5;
-	font-weight: 400;
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+:root 
+{
 	margin: 0;
 	padding: 0;
 
@@ -12,6 +11,27 @@
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+
+	/* user fonts */
+	--heading-font-family: "Bagel Fat One", system-ui;
+	--heading-font-weight: 400;
+	--heading-font-size-lg: 5rem;
+	--heading-font-size-sm: 4rem;
+	--heading-font-style: normal;
+
+	--body-font-family: "Mulish", sans-serif;
+	--body-font-optical-sizing: auto;
+	--body-font-weight: 400;
+	--body-font-style: normal;
+
+	/* user colours */
+	--background-color1: #22311d;
+	--detailing-color1: #304529;
+	--text-color1: #dbcfb0;
+
+	--background-color2: #cdccaf;
+	--detailing-color2: #5a403a;
+	--text-color2: #4f473b;
 }
 
 html
@@ -22,4 +42,23 @@ html
 body
 {
 	display: flow-root;
+}
+
+html, body
+{
+    scrollbar-width: none;
+}
+
+.os-theme-custom.os-scrollbar
+{
+    --os-size: 12px;
+    --os-padding-perpendicular: 2px;
+    --os-padding-axis: 4px;
+    --os-track-bg: transparent;
+    --os-track-bg-hover: transparent;
+    --os-track-bg-active: transparent;
+    --os-handle-bg: var(--detailing-color1);
+    --os-handle-bg-hover: var(--text-color1);
+    --os-handle-bg-active: var(--text-color1);
+    --os-handle-border-radius: 999px;
 }
