@@ -4,7 +4,7 @@ function Footer()
 {
 	return (
 		<div className="footer">
-			<p>&lt;3 Made with love. &lt;/3</p>
+			<p>&lt;3 Made with love &lt;/3</p>
 		</div>
 	);
 };

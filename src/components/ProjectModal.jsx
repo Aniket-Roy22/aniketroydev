@@ -13,25 +13,32 @@ export default function BasicModal() {
 
 	return (
 		<div className="project-slide">
-			<div
-				className="project-display"
-				onClick={handleOpen}
-			>
-				<h1 className="display-title">Project Title</h1>
+			<div className="project-display" onClick={handleOpen}>
+				<h2 className="display-title section-heading">Title</h2>
 				<img
 					className="display-pic"
 					src="./images/test.jpg"
 					alt="project picture"
 				/>
-				<span className="display-desc">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nobis soluta nisi fugit! Recusandae commodi porro perferendis facilis voluptatem iure vero autem, doloribus odit nobis? Mollitia atque aut esse ipsam.
-				</span>
+				<div className="display-desc-container">
+					<span className="display-desc">Description Tab1</span>
+					<span className="display-desc">Description Tab2</span>
+					<span className="display-desc">Description Tab3</span>
+				</div>
 				<a
 					className="display-link"
 					onClick={(e) => e.stopPropagation()}
 					href="https://www.instagram.com"
 				>
-					<button>Click Me!</button>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="24"
+						height="24"
+						fill="#ffffff"
+						viewBox="0 0 256 256"
+					>
+						<path d="M224,104a8,8,0,0,1-16,0V59.32l-66.33,66.34a8,8,0,0,1-11.32-11.32L196.68,48H152a8,8,0,0,1,0-16h64a8,8,0,0,1,8,8Zm-40,24a8,8,0,0,0-8,8v72H48V80h72a8,8,0,0,0,0-16H48A16,16,0,0,0,32,80V208a16,16,0,0,0,16,16H176a16,16,0,0,0,16-16V136A8,8,0,0,0,184,128Z"></path>
+					</svg>
 				</a>
 			</div>
 

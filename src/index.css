@@ -22,6 +22,7 @@
 	--body-font-family: "Mulish", sans-serif;
 	--body-font-optical-sizing: auto;
 	--body-font-weight: 400;
+	--body-font-size: 1.3rem;
 	--body-font-style: normal;
 
 	/* user colours */
@@ -30,8 +31,8 @@
 	--text-color1: #dbcfb0;
 
 	--background-color2: #cdccaf;
-	--detailing-color2: #5a403a;
-	--text-color2: #4f473b;
+	--detailing-color2: #4f473b;
+	--text-color2: #5a403a;
 }
 
 html

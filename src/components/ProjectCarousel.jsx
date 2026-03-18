@@ -32,7 +32,9 @@ export default function Carousel({children}) {
 	};
 
 	return (
-		<div id="projects" className="carousel-container">
+		<div id="projects" className="carousel-section">
+			<h2 className="section-heading">Projects</h2>
+
 			<div className="carousel" ref={containerRef}>
 				<AnimatePresence initial={false} custom={direction}>
 					<motion.div
@@ -67,7 +69,7 @@ export default function Carousel({children}) {
 				>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
-						fill="#ff0000"
+						fill="none"
 						viewBox="0 0 256 256"
 					>
 						<path d="M160 48 L96 128 L160 208" />
@@ -80,7 +82,7 @@ export default function Carousel({children}) {
 				>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
-						fill="#ff0000"
+						fill="none"
 						viewBox="0 0 256 256"
 					>
 						<path d="M96 48 L176 128 L96 208" />

@@ -34,6 +34,7 @@
 	font-family: var(--body-font-family);
 	font-optical-sizing: var(--body-font-optical-sizing);
 	font-weight: var(--body-font-weight);
+	font-size: var(--body-font-size);
 	font-style: var(--body-font-style);
 
 	min-width: 0;
@@ -57,8 +58,9 @@
 .spotify-widget
 {
 	width: 100%;
-	height: calc(100% - 24.5px);
-	border-radius: 0.8rem;
+	height: calc(100% - 94px);
+	margin-top: 1rem;
+	border-radius: 0.9rem;
 }
 
 /* --- Laptops --- */

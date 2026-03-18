@@ -3,11 +3,21 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	padding: 5rem;
+	background-color: var(--background-color1);
+	color: var(--text-color1);
+
+	font-family: var(--body-font-family);
+	font-size: var(--body-font-size);
 }
 
 .contact-section > *
 {
 	padding: 2rem;
+}
+
+.contact-links > .section-heading
+{
+	margin-bottom: 1rem;
 }
 
 .email-link
@@ -31,7 +41,7 @@
 	margin: 30px auto 20px;
 	padding: 15px;
 	border-radius: 7px;
-	box-shadow: 0 1px 5px grey;
+	box-shadow: 1.5px 1.5px 10px 3px rgba(48, 69, 41, 1);
 }
   
 .form-field
@@ -44,19 +54,23 @@
 {
 	width: 100%;
 	padding: 16px 12px;
-	border: 1px solid grey;
-	background: transparent;
-	color: black;
+	background: var(--detailing-color1);
 	font-size: 16px;
 	outline: none;
+	border-radius: 7px;
+	border: none;
 }
-  
+
+.form-field textarea
+{
+	resize: none;
+}
+
 .form-field label
 {
 	position: absolute;
 	left: 12px;
-	top: 16px;
-	color: grey;
+	top: 13.5px;
 	transition: 0.2s ease;
 	pointer-events: none;
 	padding: 0 5px 0;
@@ -66,8 +80,44 @@
 .form-field.filled label
 {
 	top: -10px;
-	font-size: 12px;
-	background-color: white;
+	font-size: 1rem;
+	background-color: transparent;
+}
+
+.submit-button
+{
+    border: none;
+    padding: 10px 24px;
+    border-radius: 7px;
+    background-color: var(--text-color1);
+    color: var(--background-color1);
+    
+    /* natural button feel */
+    cursor: pointer;
+    user-select: none;
+    
+    /* smooth transitions */
+    transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.submit-button:hover
+{
+    filter: brightness(1.1);
+    box-shadow: 0 4px 12px #00000044;
+    transform: translateY(-2px);
+}
+
+.submit-button:active
+{
+    transform: translateY(1px);
+    box-shadow: 0 1px 3px #00000033;
+    filter: brightness(0.95);
+}
+
+.submit-button:focus-visible
+{
+    outline: 2px solid var(--detailing-color1);
+    outline-offset: 3px;
 }
 
 @media (max-width: 768px)
@@ -76,5 +126,13 @@
 	{
 		grid-template-columns: 1fr;
 		grid-template-rows: auto 1fr;
+	}
+}
+
+@media (max-width: 540px)
+{
+	.contact-links > .section-heading
+	{
+		font-size: var(--heading-font-size-sm);
 	}
 }

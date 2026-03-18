@@ -59,7 +59,7 @@ function ContactForm()
 	return (
 		<div id="contact" className="contact-section">
 			<div className="contact-links">
-				<h2>Let's Connect</h2>
+				<h2 className="section-heading">Let's Connect</h2>
 				<p>
 					Life's too short for missed connections, so don't let this be one.
 				</p>
@@ -130,7 +130,7 @@ function ContactForm()
 					<label>Message</label>
 				</div>
 
-				<button type="submit">Send</button>
+				<button className="submit-button" type="submit">Send</button>
 			</form>
 		</div>
 	);

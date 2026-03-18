@@ -1,7 +1,13 @@
-.carousel-container
+.carousel-section
 {
-	background-color: chartreuse;
-	padding: 6rem 0;
+	background-color: var(--background-color2);
+	padding: 4rem 0 6rem;
+}
+
+.carousel-section > .section-heading
+{
+	margin-left: 6rem;
+	color: var(--text-color2);
 }
 
 .carousel
@@ -14,6 +20,7 @@
 	border-radius: 12px;
 	user-select: none;
 	-webkit-user-drag: none;
+	box-shadow: 2px 4px 8px 4px rgba(79, 71, 59, 0.3);
 }
   
 .carousel-slide
@@ -24,7 +31,6 @@
 	object-fit: cover;
 	inset: 0;
 	border-radius: 12px;
-	/* will-change: transform, opacity; */
 }
   
 /* Buttons */
@@ -54,7 +60,7 @@
 
 .carousel-button svg path
 {
-	stroke: rgb(255, 0, 0);
+	stroke: var(--background-color2);
 	stroke-width: 32px;
 	stroke-linecap: round;
 	stroke-linejoin: bevel;
@@ -110,12 +116,20 @@
 
     .carousel
 	{
-        width: 100%;
+        width: 90%;
         aspect-ratio: 16 / 9;
         height: auto;
         max-height: 500px;
         border-radius: 10px;
     }
+}
+
+@media (max-width: 540px)
+{
+	.section-heading
+	{
+		font-size: var(--heading-font-size-sm);
+	}
 }
 
 @media (max-width: 480px)
@@ -124,4 +138,10 @@
 	{
         padding: 3rem 1rem;
     }
+
+	.carousel-section > .section-heading
+	{
+		margin-left: 0;
+		text-align: center;
+	}
 }
