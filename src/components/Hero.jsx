@@ -40,61 +40,63 @@ function Hero() {
 	const scale = useTransform(scrollYProgress, [0.5, 0.6], [0.8, 1]);
 
 	return (
-		<div id="home" className="main-hero">
-			<Parallax
-				className="parallax-container"
-				ref={parallaxRef}
-				pages={2}
-			>
-				<ParallaxLayer
-					sticky={isLargeScreen ? {start: 0, end: 1} : undefined}
+		<section>
+			<div id="home" className="main-hero">
+				<Parallax
+					className="parallax-container"
+					ref={parallaxRef}
+					pages={2}
 				>
-					<MainImage />
-				</ParallaxLayer>
+					<ParallaxLayer
+						sticky={isLargeScreen ? {start: 0, end: 1} : undefined}
+					>
+						<MainImage />
+					</ParallaxLayer>
 
-				<ParallaxLayer
-					offset={layerConfig[0].offset}
-					speed={layerConfig[0].speed}
-				>
-					<div className="hero-card-container container-pos1">
-						<motion.div
-							className="hero-card"
-							style={{opacity, scale}}
-						>
-							<TestBox />
-						</motion.div>
-					</div>
-				</ParallaxLayer>
+					<ParallaxLayer
+						offset={layerConfig[0].offset}
+						speed={layerConfig[0].speed}
+					>
+						<div className="hero-card-container container-pos1">
+							<motion.div
+								className="hero-card"
+								style={{opacity, scale}}
+							>
+								<TestBox />
+							</motion.div>
+						</div>
+					</ParallaxLayer>
 
-				<ParallaxLayer
-					offset={layerConfig[1].offset}
-					speed={layerConfig[1].speed}
-				>
-					<div className="hero-card-container container-pos2">
-						<motion.div
-							className="hero-card"
-							style={{opacity, scale}}
-						>
-							<TestBox />
-						</motion.div>
-					</div>
-				</ParallaxLayer>
+					<ParallaxLayer
+						offset={layerConfig[1].offset}
+						speed={layerConfig[1].speed}
+					>
+						<div className="hero-card-container container-pos2">
+							<motion.div
+								className="hero-card"
+								style={{opacity, scale}}
+							>
+								<TestBox />
+							</motion.div>
+						</div>
+					</ParallaxLayer>
 
-				<ParallaxLayer
-					offset={layerConfig[2].offset}
-					speed={layerConfig[2].speed}
-				>
-					<div className="hero-card-container container-pos3">
-						<motion.div
-							className="hero-card"
-							style={{opacity, scale}}
-						>
-							<TestBox />
-						</motion.div>
-					</div>
-				</ParallaxLayer>
-			</Parallax>
-		</div>
+					<ParallaxLayer
+						offset={layerConfig[2].offset}
+						speed={layerConfig[2].speed}
+					>
+						<div className="hero-card-container container-pos3">
+							<motion.div
+								className="hero-card"
+								style={{opacity, scale}}
+							>
+								<TestBox />
+							</motion.div>
+						</div>
+					</ParallaxLayer>
+				</Parallax>
+			</div>
+		</section>
 	);
 }
 

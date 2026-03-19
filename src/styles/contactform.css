@@ -135,4 +135,9 @@
 	{
 		font-size: var(--heading-font-size-sm);
 	}
+
+	.contact-section > *
+	{
+		padding: 1rem;
+	}
 }

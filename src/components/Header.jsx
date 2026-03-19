@@ -20,40 +20,14 @@ function Header() {
 	const handleNavClick = (e, href) => {
 		e.preventDefault();
 		const target = document.querySelector(href);
-		if (target) {
-			target.scrollIntoView({behavior: "smooth"});
-		}
+		if (target) target.scrollIntoView({behavior: "smooth"});
 	};
 
 	return (
-		<Box
-			component="header"
-			sx={{
-				width: "65vw",
-				position: "fixed",
-				inset: "0",
-				bottom: "auto",
-				display: "flex",
-				alignItems: "center",
-				padding: "1rem 2rem",
-				margin: "2rem auto",
-				backgroundColor: "grey",
-				borderRadius: "999px",
-				zIndex: 999,
-			}}
-		>
-			{/* Logo / Icon area */}
-			<Box>Icon</Box>
+		<Box className="navbar" component="header">
+			<Box className="navbar-icon">Icon</Box>
 
-			{/* Desktop navigation */}
-			<Box
-				sx={{
-					ml: "auto",
-					display: {xs: "none", md: "flex"},
-					alignItems: "center",
-					gap: 3,
-				}}
-			>
+			<Box className="navbar-desktop">
 				{NAV_LINKS.map(({label, href}) => (
 					<a
 						key={label}
@@ -69,15 +43,8 @@ function Header() {
 				</Button>
 			</Box>
 
-			{/* Mobile hamburger button */}
 			<Button
 				onClick={handleOpen}
-				sx={{
-					ml: "auto",
-					display: {xs: "flex", md: "none"},
-					minWidth: "auto",
-					fontSize: "20px",
-				}}
 				aria-label="Open navigation menu"
 				className="burger"
 			>
@@ -85,7 +52,16 @@ function Header() {
 			</Button>
 
 			{/* Mobile dropdown menu */}
-			<Menu anchorEl={anchorEl} open={open} onClose={handleClose}>
+			<Menu
+				slotProps={{
+					paper: {
+						className: "mobile-menu",
+					},
+				}}
+				anchorEl={anchorEl}
+				open={open}
+				onClose={handleClose}
+			>
 				{NAV_LINKS.map(({label, href}) => (
 					<MenuItem
 						key={label}
@@ -99,7 +75,14 @@ function Header() {
 						</a>
 					</MenuItem>
 				))}
-				<MenuItem onClick={handleClose}>Download CV</MenuItem>
+				<a className="navigation-link" href="">
+					<MenuItem
+						className="mobile-menu-item mobile-cv"
+						onClick={handleClose}
+					>
+						Download CV
+					</MenuItem>
+				</a>
 			</Menu>
 		</Box>
 	);
