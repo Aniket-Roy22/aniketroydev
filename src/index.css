@@ -30,7 +30,7 @@
 	--detailing-color1: #304529;
 	--text-color1: #dbcfb0;
 
-	--background-color2: #cdccaf;
+	--background-color2: #dbcfb0;
 	--detailing-color2: #4f473b;
 	--text-color2: #5a403a;
 }
@@ -58,8 +58,8 @@ html, body
     --os-track-bg: transparent;
     --os-track-bg-hover: transparent;
     --os-track-bg-active: transparent;
-    --os-handle-bg: var(--detailing-color1);
-    --os-handle-bg-hover: var(--text-color1);
-    --os-handle-bg-active: var(--text-color1);
+    --os-handle-bg: #00000099;
+    --os-handle-bg-hover: black;
+    --os-handle-bg-active: black;
     --os-handle-border-radius: 999px;
 }

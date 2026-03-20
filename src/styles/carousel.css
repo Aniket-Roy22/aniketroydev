@@ -114,6 +114,11 @@
         padding: 4rem 2rem;
     }
 
+	.carousel-section > .section-heading
+	{
+		margin-left: 3rem;
+	}
+
     .carousel
 	{
         width: 90%;
@@ -124,11 +129,21 @@
     }
 }
 
+@media (max-width: 786px)
+{
+	.carousel-section > .section-heading
+	{
+		margin-left: 2rem;
+	}
+}
+
 @media (max-width: 540px)
 {
-	.section-heading
+	.carousel-section > .section-heading
 	{
+		margin-left: 0;
 		font-size: var(--heading-font-size-sm);
+		text-align: center;
 	}
 }
 
@@ -138,10 +153,4 @@
 	{
         padding: 3rem 1rem;
     }
-
-	.carousel-section > .section-heading
-	{
-		margin-left: 0;
-		text-align: center;
-	}
 }

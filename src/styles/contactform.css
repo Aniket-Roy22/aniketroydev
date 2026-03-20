@@ -10,14 +10,14 @@
 	font-size: var(--body-font-size);
 }
 
-.contact-section > *
-{
-	padding: 2rem;
-}
-
 .contact-links > .section-heading
 {
 	margin-bottom: 1rem;
+}
+
+.contact-section > *
+{
+	padding: 2rem;
 }
 
 .email-link
@@ -124,6 +124,7 @@
 {
 	.contact-section
 	{
+		padding: 3rem 1rem;
 		grid-template-columns: 1fr;
 		grid-template-rows: auto 1fr;
 	}
@@ -131,13 +132,18 @@
 
 @media (max-width: 540px)
 {
+	.contact-links
+	{
+		text-align: center;
+	}
+
 	.contact-links > .section-heading
 	{
 		font-size: var(--heading-font-size-sm);
 	}
 
-	.contact-section > *
+	.socials
 	{
-		padding: 1rem;
+		justify-content: center;
 	}
 }
