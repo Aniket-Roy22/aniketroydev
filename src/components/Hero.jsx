@@ -26,9 +26,9 @@ function Hero() {
 	}, []);
 
 	return (
-		<section>
+		<section id="home">
 			<BackgroundAnimation className="bg-animation" />
-			<div id="home" className="main-hero">
+			<div className="main-hero">
 				<Parallax className="parallax-container" pages={2}>
 					<ParallaxLayer
 						sticky={isLargeScreen ? {start: 0, end: 1} : undefined}

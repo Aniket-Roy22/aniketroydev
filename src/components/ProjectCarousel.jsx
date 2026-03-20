@@ -32,8 +32,8 @@ export default function Carousel({children}) {
 	};
 
 	return (
-		<section>
-			<div id="projects" className="carousel-section">
+		<section id="projects">
+			<div className="carousel-section">
 				<h2 className="section-heading">Projects</h2>
 
 				<div className="carousel" ref={containerRef}>

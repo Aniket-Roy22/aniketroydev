@@ -6,11 +6,11 @@ import "../styles/bentobox.css"
 
 function BentoBox() {
 	return (
-		<section>
+		<section id="about">
 			<div className="about-section" id="about">
 				<h2 className="section-heading">About Me</h2>
 
-				<div id="about" className="bento-container">
+				<div className="bento-container">
 					<div className="skill-area" style={{gridArea: "box1"}}>
 						<SkillMarquee />
 					</div>

@@ -4,10 +4,14 @@ const BackgroundAnimation = ({className}) => {
 	return (
 		<div className={className}>
 			<DotLottieReact
-				src="https://lottie.host/af050028-04ba-4a89-bcb5-6b24b70551bf/81emOEaINL.lottie"
+				src="https://lottie.host/f8d14ed8-5472-4e71-9b07-f59334be63b0/zWnO5HuH93.lottie"
 				loop
 				autoplay
-				speed={0.8}
+				layout={{
+					fit: "cover",
+					align: [0, 0],
+				}}
+				speed={1.1}
 			/>
 		</div>
 	);

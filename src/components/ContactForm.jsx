@@ -57,8 +57,8 @@ function ContactForm()
 	const handleExpansionOnBlur = () => {setExpanded(false)};
 
 	return (
-		<section>
-			<div id="contact" className="contact-section">
+		<section id="contact">
+			<div className="contact-section">
 				<div className="contact-links">
 					<h2 className="section-heading">Let's Connect</h2>
 					<p>
