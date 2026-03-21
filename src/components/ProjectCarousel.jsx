@@ -25,8 +25,6 @@ export default function Carousel({children}) {
 	const containerRef = useRef(null);
 	const slides = Children.toArray(children);
 	const index = ((page % slides.length) + slides.length) % slides.length;
-
-
 	const paginate = (newDirection) => {
 		setPage([page + newDirection, newDirection]);
 	};

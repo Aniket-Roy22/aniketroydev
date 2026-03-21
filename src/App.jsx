@@ -31,9 +31,37 @@ function App() {
 			<Hero />
 			<BentoBox />
 			<ProjectCarousel>
-				<ProjectModal />
-				<ProjectModal />
-				<ProjectModal />
+				<ProjectModal
+					title="Keeper"
+					imgSrc="./images/test.jpg"
+					t1="Full Stack"
+					t2="React"
+					t3="REST API"
+					gitLink="https://github.com/Aniket-Roy22/Keeper"
+				>
+					<h1>Hello</h1>
+				</ProjectModal>
+
+				<ProjectModal
+					title="Jarvis"
+					imgSrc="./images/test.jpg"
+					t1="AI"
+					t2="Voice Assistant"
+					t3="Voice Recognition"
+					gitLink="https://github.com/Aniket-Roy22/Jarvis-Clone"
+				>
+					<h1>Hello</h1>
+				</ProjectModal>
+
+				<ProjectModal
+					title="QR Generator"
+					imgSrc="./images/test.jpg"
+					t1="QR Code"
+					t2="Backend"
+					gitLink="https://github.com/Aniket-Roy22/QR-Code-Generator"
+				>
+					<h1>Hello</h1>
+				</ProjectModal>
 			</ProjectCarousel>
 			<ContactForm />
 			<Footer />

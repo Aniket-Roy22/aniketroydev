@@ -6,7 +6,7 @@ import TestBox from "./testbox";
 
 import "../styles/modal.css";
 
-export default function BasicModal() {
+export default function BasicModal({title, imgSrc, t1, t2, t3, gitLink, children}) {
 	const [open, setOpen] = useState(false);
 	const handleOpen = () => setOpen(true);
 	const handleClose = () => setOpen(false);
@@ -14,21 +14,24 @@ export default function BasicModal() {
 	return (
 		<div className="project-slide">
 			<div className="project-display" onClick={handleOpen}>
-				<h2 className="display-title section-heading">Title</h2>
+				<h2 className="display-title section-heading">{title ?? "No Title"}</h2>
+
 				<img
 					className="display-pic"
-					src="./images/test.jpg"
+					src={imgSrc}
 					alt="project picture"
 				/>
+
 				<div className="display-desc-container">
-					<span className="display-desc">Description Tab1</span>
-					<span className="display-desc">Description Tab2</span>
-					<span className="display-desc">Description Tab3</span>
+					{t1 && <span className="display-desc">{t1}</span>}
+					{t2 && <span className="display-desc">{t2}</span>}
+					{t3 && <span className="display-desc">{t3}</span>}
 				</div>
+
 				<a
 					className="display-link"
 					onClick={(e) => e.stopPropagation()}
-					href="https://www.instagram.com"
+					href={gitLink}
 				>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -49,14 +52,7 @@ export default function BasicModal() {
 				aria-describedby="modal-modal-description"
 			>
 				<Box className="modal-box">
-					<Typography
-						id="modal-modal-title"
-						variant="h6"
-						component="h2"
-					>
-						Text in a modal
-					</Typography>
-					<TestBox />
+					{children}
 				</Box>
 			</Modal>
 		</div>
