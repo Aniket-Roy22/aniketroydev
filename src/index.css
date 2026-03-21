@@ -43,6 +43,7 @@ html
 body
 {
 	display: flow-root;
+	background-color: var(--background-color2) !important;
 }
 
 html, body
