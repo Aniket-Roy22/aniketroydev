@@ -4,13 +4,13 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	width: 90vw;
-	height: 90vh;
+	width: 80vw;
+	height: 80vh;
 	background-color: white;
 	border: 2px solid #000;
 	box-shadow: 24;
-	padding: 4em;
 	overflow: scroll;
+	scrollbar-width: none;
 }
 
 .project-slide
