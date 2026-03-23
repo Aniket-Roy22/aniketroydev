@@ -70,6 +70,7 @@
 .socials-area
 {
 	display: flex;
+	gap: 1rem;
 	justify-content: space-evenly;
 }
 
@@ -93,9 +94,7 @@
 .spotify-widget
 {
 	width: 100%;
-	height: calc(100% - 2.07rem);
 	margin-top: 1rem;
-	border-radius: 0.9rem;
 }
 
 /* --- Laptops --- */

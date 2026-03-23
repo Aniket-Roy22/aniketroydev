@@ -75,19 +75,18 @@ function BentoBox() {
 						<iframe
 							className="spotify-widget"
 							data-testid="embed-iframe"
+							style={{borderRadius: "12px"}}
 							src="https://open.spotify.com/embed/show/1Y9gTi9bBYEJya1Z8Wo2ME?utm_source=generator"
-							allow="autoplay; clipboard-write; encrypted-media; picture-in-picture"
+							width="100%"
+							height="152"
+							allowFullScreen
+							allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
 							loading="lazy"
 						/>
 					</div>
 
 					<div style={{gridArea: "box5"}}>
-						Lorem ipsum dolor sit, amet consectetur adipisicing
-						elit. Perferendis optio, voluptates repudiandae minus
-						quaerat temporibus recusandae repellendus, eos ipsam
-						accusamus sint dolores pariatur possimus ducimus neque
-						tempore qui facere natus debitis iste, consequatur
-						corporis!
+						Hello
 					</div>
 				</div>
 			</div>
