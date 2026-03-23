@@ -43,10 +43,45 @@
 	border-radius: 2rem;
 }
 
+.learning .carousel
+{
+	width: 100%;
+	/* height: 100%; */
+	aspect-ratio: 1/1;
+	margin-top: 1rem;
+	box-shadow: 0 0 6px var(--text-color1);
+}
+
+.learning .project-display
+{
+	aspect-ratio: unset;
+}
+
+.learning .section-heading
+{
+	font-size: 2rem;
+}
+
+.learning .carousel-dot
+{
+	width: 0.5rem;
+}
+
 .socials-area
 {
 	display: flex;
 	justify-content: space-evenly;
+}
+
+.socials-area .social-link:hover
+{
+	background-color: var(--background-color1);
+	box-shadow: 1px 1px 5px var(--text-color1);
+}
+
+.socials-area .social-link:active
+{
+	box-shadow: 0 1px 3px var(--detailing-color1);
 }
 
 .music
@@ -58,7 +93,7 @@
 .spotify-widget
 {
 	width: 100%;
-	height: calc(100% - 94px);
+	height: calc(100% - 2.07rem);
 	margin-top: 1rem;
 	border-radius: 0.9rem;
 }

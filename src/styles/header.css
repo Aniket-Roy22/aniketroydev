@@ -18,6 +18,8 @@
 }
 
 .navbar-icon {
+	width: 2.5rem;
+	aspect-ratio: 1/1;
 	flex-shrink: 0;
 }
 
@@ -41,6 +43,12 @@
 	font-style: var(--body-font-style);
 	color: var(--text-color1) !important;
 	text-shadow: 0 0 8px var(--detailing-color2);
+}
+
+.download-link
+{
+	text-decoration: none;
+	color: inherit;
 }
 
 .download-button {

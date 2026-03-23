@@ -1,5 +1,7 @@
 import SkillMarquee from "./SkillMarquee";
 import SocialIcon from "./SocialIcon";
+import Carousel from "./Carousel";
+import ProjectModal from "./ProjectModal";
 
 import "../styles/bentobox.css"
 
@@ -16,11 +18,34 @@ function BentoBox() {
 					</div>
 
 					<div style={{gridArea: "box2"}}>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Eveniet cupiditate placeat commodi voluptas quisquam
-						dicta facere, officiis ullam iure voluptate rerum quidem
-						distinctio nisi porro. Dolor tenetur illo dolorum
-						dignissimos.
+						<div className="learning">
+							<span className="music-heading">
+								Currently Learning...
+							</span>
+							<Carousel>
+								<ProjectModal
+									title="Web3"
+									imgSrc="../../images/test.jpg"
+									t1="Solidity"
+									t2="Ethereum"
+									t3="Security"
+									link="https://updraft.cyfrin.io"
+								>
+									<h2>Hello</h2>
+								</ProjectModal>
+
+								<ProjectModal
+									title="Backend"
+									imgSrc="../../images/test.jpg"
+									t1="Backend"
+									t2="Principles"
+									t3="Architecture"
+									link="https://www.youtube.com/playlist?list=PLui3EUkuMTPgZcV0QhQrOcwMPcBCcd_Q1"
+								>
+									<h2>Hello</h2>
+								</ProjectModal>
+							</Carousel>
+						</div>
 					</div>
 
 					<div style={{gridArea: "box3"}}>

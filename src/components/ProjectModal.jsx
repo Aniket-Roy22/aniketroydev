@@ -1,12 +1,10 @@
 import {useState} from "react";
 import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
-import TestBox from "./testbox";
 
 import "../styles/modal.css";
 
-export default function BasicModal({title, imgSrc, t1, t2, t3, gitLink, children}) {
+export default function BasicModal({title, imgSrc, t1, t2, t3, link, children}) {
 	const [open, setOpen] = useState(false);
 	const handleOpen = () => setOpen(true);
 	const handleClose = () => setOpen(false);
@@ -31,7 +29,7 @@ export default function BasicModal({title, imgSrc, t1, t2, t3, gitLink, children
 				<a
 					className="display-link"
 					onClick={(e) => e.stopPropagation()}
-					href={gitLink}
+					href={link}
 				>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"

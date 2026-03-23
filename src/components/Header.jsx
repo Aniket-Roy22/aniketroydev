@@ -1,6 +1,7 @@
 import {useState} from "react";
 import {GiHamburgerMenu} from "react-icons/gi";
 import {Box, Button, Menu, MenuItem} from "@mui/material";
+import resume from "../assets/AniketRoy.pdf";
 
 import "../styles/header.css";
 
@@ -25,7 +26,13 @@ function Header() {
 
 	return (
 		<Box className="navbar" component="header">
-			<Box className="navbar-icon">Icon</Box>
+			<Box>
+				<img
+					className="navbar-icon"
+					src="../../icons/favicon2.png"
+					alt="favicon"
+				/>
+			</Box>
 
 			<Box className="navbar-desktop">
 				{NAV_LINKS.map(({label, href}) => (
@@ -38,9 +45,17 @@ function Header() {
 						{label}
 					</a>
 				))}
-				<Button className="download-button" variant="contained">
-					Download CV
-				</Button>
+				<a
+					className="download-link"
+					href={resume}
+					target="_blank"
+					rel="noopener noreferrer"
+					download="AniketRoy_CV.pdf"
+				>
+					<Button className="download-button" variant="contained">
+						Download CV
+					</Button>
+				</a>
 			</Box>
 
 			<Button
@@ -75,7 +90,13 @@ function Header() {
 						</a>
 					</MenuItem>
 				))}
-				<a className="navigation-link" href="">
+				<a
+					className="download-link navigation-link"
+					href={resume}
+					target="_blank"
+					rel="noopener noreferrer"
+					download="AniketRoy_CV.pdf"
+				>
 					<MenuItem
 						className="mobile-menu-item mobile-cv"
 						onClick={handleClose}
