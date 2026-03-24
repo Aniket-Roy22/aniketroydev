@@ -58,13 +58,25 @@
 	aspect-ratio: 1/1;
 }
 
-.carousel-button svg path
+.carousel-button svg
 {
-	stroke: var(--background-color2);
+	stroke: var(--text-color2);
 	stroke-width: 32px;
 	stroke-linecap: round;
 	stroke-linejoin: bevel;
+	background-color: var(--background-color2);
+	border-radius: 50%;
+	padding: 5px;
 }
+
+/* .carousel-button svg {
+    filter: drop-shadow(0 0 1px white);
+    transition: filter 0.1s ease;
+}
+
+.carousel-button:hover svg {
+    filter: drop-shadow(0 0 2px white);
+} */
   
 .carousel-button.left
 {

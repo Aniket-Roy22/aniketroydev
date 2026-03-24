@@ -2,11 +2,11 @@ import "../styles/project.css";
 
 const KeeperApp = () => {
 	return (
-		<div className="keeper-project">
+		<div className="project-modal-container">
 			{/* Hero Image */}
 			<img
 				className="project-hero-img"
-				src="./images/test.jpg"
+				src="./images/keeper.png"
 				alt="Keeper App"
 			/>
 
@@ -51,9 +51,7 @@ const KeeperApp = () => {
 						</code>
 					</pre>
 
-					<p className="project-text">
-						Install dependencies
-					</p>
+					<p className="project-text">Install dependencies</p>
 					<pre className="project-code">
 						<code>cd Keeper && npm install</code>
 					</pre>

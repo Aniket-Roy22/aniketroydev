@@ -25,7 +25,7 @@ function BentoBox() {
 							<Carousel>
 								<ProjectModal
 									title="Web3"
-									imgSrc="../../images/test.jpg"
+									imgSrc="../../images/web3.png"
 									t1="Solidity"
 									t2="Ethereum"
 									t3="Security"
@@ -36,7 +36,7 @@ function BentoBox() {
 
 								<ProjectModal
 									title="Backend"
-									imgSrc="../../images/test.jpg"
+									imgSrc="../../images/backend.png"
 									t1="Backend"
 									t2="Principles"
 									t3="Architecture"

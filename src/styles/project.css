@@ -1,7 +1,9 @@
-.keeper-project {
+.project-modal-container {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+	background-color: var(--background-color2);
+	color: var(--text-color2);
 }
 
 .project-hero-img {
@@ -63,17 +65,22 @@
     gap: 8px;
 }
 
+.project-tags > .display-desc{
+	background-color: var(--detailing-color2);
+	color: var(--background-color2);
+}
+
 .project-tag {
     padding: 4px 12px;
     border-radius: 999px;
     font-size: 0.8rem;
     font-weight: 500;
-    background-color: #ffffff18;
     border: 1px solid #ffffff25;
 }
 
 .project-code {
-    background-color: #00000030;
+    background-color: var(--detailing-color2);
+	color: var(--background-color2);
     border: 1px solid #ffffff15;
     border-radius: 8px;
     padding: 12px 16px;
@@ -84,7 +91,8 @@
 }
 
 .project-code-inline {
-    background-color: #00000030;
+    background-color: var(--detailing-color2);
+	color: var(--background-color2);
     border: 1px solid #ffffff15;
     border-radius: 4px;
     padding: 2px 6px;

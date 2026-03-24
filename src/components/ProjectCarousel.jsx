@@ -15,7 +15,7 @@ export default function ProjectCarousel() {
 				<Carousel>
 					<ProjectModal
 						title="Keeper"
-						imgSrc="./images/test.jpg"
+						imgSrc="./images/keeper.png"
 						t1="Full Stack"
 						t2="REST API"
 						t3="React"
@@ -26,7 +26,7 @@ export default function ProjectCarousel() {
 
 					<ProjectModal
 						title="Travel Tracker"
-						imgSrc="./images/test.jpg"
+						imgSrc="./images/familytraveltracker.png"
 						t1="Full Stack"
 						t2="REST API"
 						t3="RDBMS"
@@ -37,7 +37,7 @@ export default function ProjectCarousel() {
 
 					<ProjectModal
 						title="Jarvis"
-						imgSrc="./images/test.jpg"
+						imgSrc="./images/jarvisclone.png"
 						t1="AI"
 						t2="Voice Assistant"
 						t3="Voice Recognition"
@@ -48,7 +48,7 @@ export default function ProjectCarousel() {
 
 					<ProjectModal
 						title="QR Generator"
-						imgSrc="./images/test.jpg"
+						imgSrc="./images/qrcode.png"
 						t1="QR Code"
 						t2="Backend"
 						link="https://github.com/Aniket-Roy22/QR-Code-Generator"

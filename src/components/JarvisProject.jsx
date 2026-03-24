@@ -2,11 +2,11 @@ import "../styles/project.css";
 
 const JarvisClone = () => {
 	return (
-		<div className="keeper-project">
+		<div className="project-modal-container">
 			{/* Hero Image */}
 			<img
 				className="project-hero-img"
-				src="./images/test.jpg"
+				src="./images/jarvisclone.png"
 				alt="Jarvis Clone"
 			/>
 

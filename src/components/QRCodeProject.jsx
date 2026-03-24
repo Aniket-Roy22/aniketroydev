@@ -2,11 +2,11 @@ import "../styles/project.css";
 
 const QRCodeGenerator = () => {
 	return (
-		<div className="keeper-project">
+		<div className="project-modal-container">
 			{/* Hero Image */}
 			<img
 				className="project-hero-img"
-				src="./images/test.jpg"
+				src="./images/qrcode.png"
 				alt="QR Code Generator"
 			/>
 
