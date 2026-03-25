@@ -88,10 +88,13 @@
 
 /* button/link */
 .display-link {
+	background-color: rgba(0, 0, 0, 0.4);
+	border-radius: 5px;
+	padding: 5px;
 	position: absolute;
 	bottom: 5%;
 	right: 5%;
-	z-index: 2;
+	z-index: 20;
 	transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.1s ease;
 }
 

@@ -73,12 +73,14 @@
   
 .carousel-button.left
 {
-	left: 12px;
+	left: 0;
+	height: 100%;
 }
   
 .carousel-button.right
 {
-	right: 12px;
+	right: 0;
+	height: 100%;
 }
   
 /* Dots */
