@@ -2,9 +2,10 @@ import SkillMarquee from "./SkillMarquee";
 import SocialIcon from "./SocialIcon";
 import Carousel from "./Carousel";
 import ProjectModal from "./ProjectModal";
+import BackendFromFirstPrinciples from "./BackendLearning";
+import CyfrinUpdraft from "./Web3Learning";
 
 import "../styles/bentobox.css"
-
 
 function BentoBox() {
 	return (
@@ -22,29 +23,31 @@ function BentoBox() {
 							<span className="music-heading">
 								Currently Learning...
 							</span>
-							<Carousel>
-								<ProjectModal
-									title="Web3"
-									imgSrc="../../images/web3.png"
-									t1="Solidity"
-									t2="Ethereum"
-									t3="Security"
-									link="https://updraft.cyfrin.io"
-								>
-									<h2>Hello</h2>
-								</ProjectModal>
+							<div className="learning-carousel-wrapper">
+								<Carousel>
+									<ProjectModal
+										title="Web3"
+										imgSrc="../../images/web3.png"
+										t1="Solidity"
+										t2="Ethereum"
+										t3="Security"
+										link="https://updraft.cyfrin.io"
+									>
+										<CyfrinUpdraft />
+									</ProjectModal>
 
-								<ProjectModal
-									title="Backend"
-									imgSrc="../../images/backend.png"
-									t1="Backend"
-									t2="Principles"
-									t3="Architecture"
-									link="https://www.youtube.com/playlist?list=PLui3EUkuMTPgZcV0QhQrOcwMPcBCcd_Q1"
-								>
-									<h2>Hello</h2>
-								</ProjectModal>
-							</Carousel>
+									<ProjectModal
+										title="Backend"
+										imgSrc="../../images/backend.png"
+										t1="Backend"
+										t2="Principles"
+										t3="Architecture"
+										link="https://www.youtube.com/playlist?list=PLui3EUkuMTPgZcV0QhQrOcwMPcBCcd_Q1"
+									>
+										<BackendFromFirstPrinciples />
+									</ProjectModal>
+								</Carousel>
+							</div>
 						</div>
 					</div>
 
@@ -85,9 +88,7 @@ function BentoBox() {
 						/>
 					</div>
 
-					<div style={{gridArea: "box5"}}>
-						Hello
-					</div>
+					<div style={{gridArea: "box5"}}>Hello</div>
 				</div>
 			</div>
 		</section>

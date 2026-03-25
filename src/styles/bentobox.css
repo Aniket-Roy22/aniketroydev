@@ -80,6 +80,31 @@
 	background-color: var(--text-color1);
 }
 
+.learning-modal
+{
+	background-color: var(--background-color1);
+	color: var(--text-color1);
+}
+
+.learning-modal .project-tags > .display-desc
+{
+	background-color: var(--detailing-color1);
+	color: var(--text-color1);
+}
+
+.learning-modal .project-code-inline
+{
+	text-decoration: none;
+	background-color: var(--detailing-color1);
+	color: var(--text-color1);
+}
+
+.learning-modal .resource-link
+{
+	text-decoration: none;
+	color: inherit;
+}
+
 .socials-area
 {
 	display: flex;
