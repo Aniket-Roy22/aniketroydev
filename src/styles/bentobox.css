@@ -72,6 +72,12 @@
 .learning .carousel-dot
 {
 	width: 0.5rem;
+	background-color: var(--background-color1);
+}
+
+.learning .carousel-dot.active
+{
+	background-color: var(--text-color1);
 }
 
 .socials-area

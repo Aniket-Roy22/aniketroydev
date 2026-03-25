@@ -16,7 +16,7 @@
 
 .project-body-area{
 	padding: 0 4rem;
-	transform: translateY(-5rem);
+	transform: translateY(-3rem);
 
 	font-family: var(--body-font-family);
 	font-size: var(--body-font-size);
