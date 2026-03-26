@@ -4,6 +4,7 @@ import Carousel from "./Carousel";
 import ProjectModal from "./ProjectModal";
 import BackendFromFirstPrinciples from "./BackendLearning";
 import CyfrinUpdraft from "./Web3Learning";
+import LocalClock from "./LocalClock";
 
 import "../styles/bentobox.css"
 
@@ -14,11 +15,11 @@ function BentoBox() {
 				<h2 className="section-heading">About Me</h2>
 
 				<div className="bento-container">
-					<div className="skill-area" style={{gridArea: "box1"}}>
+					<div className="skill-area" style={{gridArea: "skills"}}>
 						<SkillMarquee />
 					</div>
 
-					<div style={{gridArea: "box2"}}>
+					<div style={{gridArea: "learn"}}>
 						<div className="learning">
 							<span className="music-heading">
 								Currently Learning...
@@ -51,7 +52,7 @@ function BentoBox() {
 						</div>
 					</div>
 
-					<div style={{gridArea: "box3"}}>
+					<div className="socials-container" style={{gridArea: "socials"}}>
 						<div className="socials-area">
 							<SocialIcon
 								link="https://github.com/Aniket-Roy22"
@@ -71,7 +72,7 @@ function BentoBox() {
 						</div>
 					</div>
 
-					<div className="music" style={{gridArea: "box4"}}>
+					<div className="music" style={{gridArea: "music"}}>
 						<span className="music-heading">
 							Currently Listening to...
 						</span>
@@ -88,7 +89,9 @@ function BentoBox() {
 						/>
 					</div>
 
-					<div style={{gridArea: "box5"}}>Hello</div>
+					<div className="bento-clock" style={{gridArea: "datetime"}}>
+						<LocalClock />
+					</div>
 				</div>
 			</div>
 		</section>

@@ -1,0 +1,87 @@
+.clock-container
+{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.clock-heading-container
+{
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	gap: 10px;
+	margin-left: 1rem;
+}
+
+.icon
+{
+	width: 20px;
+	aspect-ratio: 1/1;
+	fill: var(--text-color1);
+}
+
+.clock-time
+{
+	text-align: center;
+	letter-spacing: 0.2rem;
+	font-family: var(--heading-font-family);
+	font-size: var(--heading-font-size-sm);
+}
+
+.clock-date
+{
+	text-align: center;
+	letter-spacing: 0.3rem;
+	font-size: 1rem;
+	margin-bottom: 1rem;
+}
+
+.datetime-divider
+{
+	border: 1px solid var(--text-color1);
+}
+
+.location
+{
+	margin-top: 1rem;
+	padding-right: 1rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+.timezone
+{
+	letter-spacing: 0.08rem;
+	background-color: var(--background-color1);
+	padding: 5px 10px;
+	border-radius: 999px;
+	font-size: 1rem;
+}
+
+.available-container
+{
+	margin: auto 0 0 1rem;
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+	justify-content: start;
+}
+
+.availability-dot
+{
+	display: inline-block;
+	width: 10px;
+	aspect-ratio: 1/1;
+	border-radius: 50%;
+	background-color: var(--background-color1);
+	border: 2px solid var(--text-color1);
+}
+
+.availability-dot.yes-available
+{
+	background-color: var(--text-color1);
+	box-shadow: 0 0 5px 1px var(--text-color1);
+}

@@ -120,6 +120,11 @@
 
 @media (max-width: 540px)
 {
+	.project-display
+	{
+		aspect-ratio: 1/1;
+	}
+
 	.project-display > .section-heading
 	{
 		font-size: 2rem;

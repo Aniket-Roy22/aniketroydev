@@ -146,6 +146,11 @@
 
 @media (max-width: 540px)
 {
+	.carousel
+	{
+		aspect-ratio: 1/1;
+	}
+
 	.carousel-section > .section-heading
 	{
 		margin-left: 0;
