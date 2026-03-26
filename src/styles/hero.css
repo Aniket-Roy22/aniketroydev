@@ -216,3 +216,9 @@
 		width: 90vw;
 	}
 }
+
+@media (max-width: 349px) {
+	.intro-name {
+		font-size: 6rem;
+	}
+}

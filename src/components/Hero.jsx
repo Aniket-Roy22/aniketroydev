@@ -16,7 +16,7 @@ function Hero() {
 	] : [
 		{offset: 1, speed: 0.5},
 		{offset: 1.1, speed: 1},
-		{offset: 1.3, speed: 0.8},
+		{offset: 1.5, speed: 0.8},
 	];
 
 	useEffect(() => {

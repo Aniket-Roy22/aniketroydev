@@ -4,6 +4,7 @@ import {StyledEngineProvider, createTheme, ThemeProvider} from "@mui/material";
 import "./index.css";
 import App from "./App.jsx";
 import "bootstrap/dist/css/bootstrap.min.css";
+import {Analytics} from "@vercel/analytics/react";
 
 const theme = createTheme({
 	breakpoints: {
@@ -16,6 +17,7 @@ createRoot(document.getElementById("root")).render(
 		<StyledEngineProvider injectFirst>
 			<ThemeProvider theme={theme}>
 				<App />
+				<Analytics />
 			</ThemeProvider>
 		</StyledEngineProvider>
 	</StrictMode>,
