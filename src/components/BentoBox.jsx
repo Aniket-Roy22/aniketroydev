@@ -33,6 +33,7 @@ function BentoBox() {
 										t2="Ethereum"
 										t3="Security"
 										link="https://updraft.cyfrin.io"
+										inDark={true}
 									>
 										<CyfrinUpdraft />
 									</ProjectModal>
@@ -44,6 +45,7 @@ function BentoBox() {
 										t2="Principles"
 										t3="Architecture"
 										link="https://www.youtube.com/playlist?list=PLui3EUkuMTPgZcV0QhQrOcwMPcBCcd_Q1"
+										inDark={true}
 									>
 										<BackendFromFirstPrinciples />
 									</ProjectModal>

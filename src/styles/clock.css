@@ -85,3 +85,24 @@
 	background-color: var(--text-color1);
 	box-shadow: 0 0 5px 1px var(--text-color1);
 }
+
+.contact-redirect
+{
+	gap: 0.5rem;
+	margin-left: auto;
+	padding-right: 1rem;
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+}
+
+.redirect-icon 
+{
+	margin-bottom: 3px;
+    transition: transform 0.1s linear;
+}
+
+.contact-redirect:hover .redirect-icon
+{
+	transform: translateX(0.4rem);
+}

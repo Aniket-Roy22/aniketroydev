@@ -80,6 +80,11 @@
 	background-color: var(--text-color1);
 }
 
+.learning-modal-box
+{
+	border: 2px solid var(--text-color1);
+}
+
 .learning-modal
 {
 	background-color: var(--background-color1);

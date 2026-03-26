@@ -20,6 +20,7 @@ export default function ProjectCarousel() {
 						t2="REST API"
 						t3="React"
 						link="https://github.com/Aniket-Roy22/Keeper"
+						inDark={false}
 					>
 						<KeeperApp />
 					</ProjectModal>
@@ -31,6 +32,7 @@ export default function ProjectCarousel() {
 						t2="REST API"
 						t3="RDBMS"
 						link="https://github.com/Aniket-Roy22/Family_Travel_Tracker"
+						inDark={false}
 					>
 						<FamilyTravelTracker />
 					</ProjectModal>
@@ -42,6 +44,7 @@ export default function ProjectCarousel() {
 						t2="Voice Assistant"
 						t3="Voice Recognition"
 						link="https://github.com/Aniket-Roy22/Jarvis-Clone"
+						inDark={false}
 					>
 						<JarvisClone />
 					</ProjectModal>
@@ -52,6 +55,7 @@ export default function ProjectCarousel() {
 						t1="QR Code"
 						t2="Backend"
 						link="https://github.com/Aniket-Roy22/QR-Code-Generator"
+						inDark={false}
 					>
 						<QRCodeGenerator />
 					</ProjectModal>

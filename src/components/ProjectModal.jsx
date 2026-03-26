@@ -4,7 +4,7 @@ import Modal from "@mui/material/Modal";
 
 import "../styles/modal.css";
 
-export default function BasicModal({title, imgSrc, t1, t2, t3, link, children}) {
+export default function BasicModal({title, imgSrc, t1, t2, t3, link, children, inDark}) {
 	const [open, setOpen] = useState(false);
 	const handleOpen = () => setOpen(true);
 	const handleClose = () => setOpen(false);
@@ -49,7 +49,7 @@ export default function BasicModal({title, imgSrc, t1, t2, t3, link, children}) 
 				aria-labelledby="modal-modal-title"
 				aria-describedby="modal-modal-description"
 			>
-				<Box className="modal-box">
+				<Box className={`modal-box ${inDark ? "learning-modal-box" : ""}`}>
 					{children}
 				</Box>
 			</Modal>
