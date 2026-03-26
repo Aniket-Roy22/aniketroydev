@@ -41,7 +41,7 @@
 
 .datetime-divider
 {
-	border: 1px solid var(--text-color1);
+	border: 1px solid #dbcfb055;
 }
 
 .location
