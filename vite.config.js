@@ -3,8 +3,9 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
-  server: {
-    port: 8080,
-  },
+	plugins: [react()],
+	base: process.env.VITE_BASE_PATH || "/aniketroydev",
+	server: {
+		port: 8080,
+	},
 });
