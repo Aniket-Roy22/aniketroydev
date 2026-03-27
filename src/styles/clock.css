@@ -104,3 +104,8 @@
 {
 	transform: translateX(0.4rem);
 }
+
+.contact-redirect:active .redirect-icon
+{
+	transform: none;
+}
