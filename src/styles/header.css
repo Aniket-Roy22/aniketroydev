@@ -90,11 +90,14 @@
 /* Mobile dropdown */
 .mobile-menu {
 	border-radius: 15px;
+	overflow-x: scroll !important;
+	overflow-y: scroll !important;
+	scrollbar-width: none !important;
 
     /* glassy */
     background: #5a403a99 !important;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
     box-shadow: 0 4px 24px #00000030;
 }
 
