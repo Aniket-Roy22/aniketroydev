@@ -86,10 +86,12 @@ function LocalClock()
 
 			{/* Availability dot */}
 			<div className="available-container">
-				<span
-					className={`availability-dot ${isAvailable ? "yes-available" : "not-available"}`}
-				/>
-				<span>{isAvailable ? "Available" : "Probably Asleep"}</span>
+				<div className="availability">
+					<span
+						className={`availability-dot ${isAvailable ? "yes-available" : "not-available"}`}
+					/>
+					<span>{isAvailable ? "Available" : "Probably Asleep"}</span>
+				</div>
 
 				{isAvailable && (
 					<span
