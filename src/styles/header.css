@@ -11,10 +11,13 @@
     z-index: 999;
 
     /* glassy */
-    background: #5a403a99 !important;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    box-shadow: 2px 4px 10px #00000030;
+    background: #5a403a !important;
+    /* then override with transparency for devices that support it */
+    @supports (backdrop-filter: blur(12px)) or (-webkit-backdrop-filter: blur(12px)) {
+        background: #5a403a99 !important;
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+    }
 }
 
 .navbar-icon {
