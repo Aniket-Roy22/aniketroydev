@@ -57,4 +57,6 @@ html, body
     --os-handle-bg-hover: black;
     --os-handle-bg-active: black;
     --os-handle-border-radius: 999px;
+	--os-viewport-overflow-x: scroll !important;
+	--os-viewport-overflow-x: scroll !important;
 }
