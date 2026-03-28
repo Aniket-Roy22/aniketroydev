@@ -126,7 +126,7 @@ function ContactForm()
 							onChange={handleChange}
 							onFocus={handleExpansionOnFocus}
 							onBlur={handleExpansionOnBlur}
-							rows={isExpanded ? "3" : "1"}
+							rows="3"
 							required
 						/>
 						<label>Message</label>
